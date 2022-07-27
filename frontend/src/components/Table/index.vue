@@ -32,23 +32,25 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <table>
-      <thead>
-        <tr>
-          <th>First name</th>
-          <th>Last name</th>
-          <th>Address</th>
-          <th>SSN</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="item in members" :key="item.ssn">
-          <td>{{ item.firstName }}</td>
-          <td>{{ item.lastName }}</td>
-          <td>{{ item.address }}</td>
-          <td>{{ item.ssn }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Address</th>
+            <th>SSN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in members" :key="item.ssn">
+            <td>{{ item.firstName }}</td>
+            <td>{{ item.lastName }}</td>
+            <td>{{ item.address }}</td>
+            <td>{{ item.ssn }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>

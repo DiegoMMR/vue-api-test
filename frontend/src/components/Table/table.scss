@@ -27,3 +27,13 @@ table {
     }
   }
 }
+
+//mobile
+@media (max-width: 768px) {
+  .table-scroll {
+    overflow-x: auto;
+  }
+  table {
+    min-width: 550px;
+  }
+}

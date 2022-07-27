@@ -11,6 +11,7 @@ const authStore = useAuthStore();
 
 onMounted(() => {
   const form = { username: "sarah", password: "connor" };
+
   login(form)
     .then((response) => {
       authStore.setToken(response.token);
@@ -44,5 +45,6 @@ onMounted(() => {
 
 .flex-row > * {
   flex: 1;
+  box-sizing: border-box;
 }
 </style>
